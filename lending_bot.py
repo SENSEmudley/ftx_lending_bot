@@ -15,10 +15,10 @@ pair                = "XRP/USD"
 token_name          = "XRP"
 # LENDING ================================================================================================== #
 lending_mode        = "manual"    # "auto" or "manual"
+time_check_lending  = ["11:30","21:30","21:09","21:40"]
 lending_spot        = {'status':True,'percent_lending':70}
 lending_cash        = {'status':False,'percent_lending':70}
 lending_csv         = "lending_history.csv"
-time_check_lending  = ["11:30","21:30","21:09","21:40"]
 time_sleep          = 60        # min
 # ========================================================================================================== #
 exchange            = ccxt.ftx({'apiKey':apiKey, 'secret':secret, 'enableRateLimit':True})
